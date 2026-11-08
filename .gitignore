@@ -482,3 +482,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Advent of Code puzzle inputs (private, not published)
+Day*/input/

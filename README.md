@@ -1,26 +1,32 @@
 # Advent of Code 2025
 
-Solutions for Advent of Code 2025 using net10.0.
+Solutions for [Advent of Code 2025](https://adventofcode.com/2025) written in C# on .NET 10.
 
-## Project Structure
+## Project structure
 
-* Helpers - Shared class library referenced by all day projects
-* Day01 through Day12 - Individual console applications for each day
+* `Helpers` – shared class library referenced by all day projects
+* `Day01` … `Day12` – one console app per day
 
 Each day project contains:
-* Program.cs - Main entry point and solution code
-* input/input.txt - Puzzle input file
-* output/ - Directory for output files
-* Reference to Helpers project
 
-## Running Solutions
+* `Program.cs` – solution code
+* `input/input.txt` – puzzle input (not committed, see below)
+* `output/` – directory for any generated output
 
-To run a specific day's solution:
-    dotnet run --project Day01
+## Puzzle inputs
 
-To build all projects:
-    dotnet build
+Advent of Code asks participants not to publish their puzzle inputs, so the
+`input/` directories are git-ignored and not part of this repository.
+To run a solution, save your own input as `Day##/input/input.txt`.
 
-## File Organization
+## Running
 
-Input files should be placed in Day##/input/input.txt for each day.
+```bash
+# build everything
+dotnet build
+
+# run a specific day
+dotnet run --project Day01
+```
+
+Target framework: `net10.0`.
